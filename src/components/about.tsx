@@ -1,19 +1,14 @@
 import Image from 'next/image'
 
-// 画像パス取得用の２行
-import getConfig from "next/config";
-const { publicRuntimeConfig } = getConfig();
-
 export function About() {
   // basePathを指定
-  const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || "";
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <Image
-              src={`${basePath}/placeholder.svg?height=400&width=400`}
+              src="/placeholder.svg?height=400&width=400"
               alt="DigiPulseオフィス"
               width={400}
               height={400}
