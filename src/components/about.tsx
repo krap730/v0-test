@@ -1,12 +1,7 @@
 import Image from 'next/image'
 
-// 画像パス取得用の２行
-import getConfig from "next/config";
-const { publicRuntimeConfig } = getConfig();
-
 export function About() {
   // basePathを指定
-  const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || "";
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
