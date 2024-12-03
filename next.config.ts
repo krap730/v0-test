@@ -13,7 +13,9 @@ const nextConfig = {
     basePath: isProd ? SUB_DIRECTORY : "",
   },
   images: {
-    path: isProd ? `${SUB_DIRECTORY}/_next/image` : "/_next/image",
+    remotePatterns: [
+      { protocol: "https", hostname: "kurashima-proxy-test.dev.cuebic-sre.work" }
+    ],
     dangerouslyAllowSVG: true,
   },
 }
