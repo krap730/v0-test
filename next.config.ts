@@ -14,8 +14,7 @@ const nextConfig = {
   },
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "kurashima-proxy-test.dev.cuebic-sre.work" },
-      { protocol: "https", hostname: "v0-test-flax.vercel.app" }
+      { protocol: "https", hostname: "" }
     ],
     dangerouslyAllowSVG: true,
   },
