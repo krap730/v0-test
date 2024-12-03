@@ -13,9 +13,6 @@ const nextConfig = {
     basePath: isProd ? SUB_DIRECTORY : "",
   },
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "" }
-    ],
     dangerouslyAllowSVG: true,
   },
 }
