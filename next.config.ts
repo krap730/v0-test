@@ -13,8 +13,9 @@ const nextConfig = {
     basePath: isProd ? SUB_DIRECTORY : "",
   },
   images: {
+    path: isProd ? `${SUB_DIRECTORY}/_next/image` : "/_next/image",
     dangerouslyAllowSVG: true,
-  }
+  },
 }
 
 module.exports = nextConfig
