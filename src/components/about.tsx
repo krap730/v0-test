@@ -13,7 +13,7 @@ export function About() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <Image
-              src={`${basePath}/placeholder.svg?height=400&width=400`}
+              src="/placeholder.svg?height=400&width=400"
               alt="DigiPulseオフィス"
               width={400}
               height={400}
